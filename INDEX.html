@@ -14,13 +14,19 @@
     <p><span id="titleTextID">Vampire Pizza Cult</span>
       <img id="bat1ID" src="img/bat2.png" alt="bat">
       order...or die
+      <br>
+      Telephone: (666) 123- 4567
+      <br>
+      100 S. Bezelbub Dr., Portland, OR., 911911
     </p>
   </div>     <!-- Jumbotron DIV ending -->
+
   <div class="container">
+    <p id="beginning">Choose carefully...</p>
     <form id=pizzaToppingsFormID>
       <div class="row">
-        <div class="col-md-8">
-          <h2>Pizza Size</h2>
+        <div class="col-md-7">
+          <p id="pizzaSizeFONTID">Pizza Size</p>
             <div class="radio" id="pizzaSizeFormID">
               <input type="radio" name="sizeCheckBoxes" value="10">  Small<br>
               <input type="radio" name="sizeCheckBoxes" value="15">  Medium<br>
@@ -28,8 +34,8 @@
               <input type="radio" name="sizeCheckBoxes" value="25">  X-Large<br>
             </div>
         </div> <!-- column DIV ending -->
-        <div class="col-md-4">
-         <img id="batpicID" src="img/vampire1.png" alt="bats!">
+        <div class="col-md-5">
+         <img id="batpicID" src="img/pizza.jpg" alt="bats!">
        </div>
 
           <!-- <h2>Pizza Quantity</h2>
@@ -42,7 +48,7 @@
 
       </div>
       <div class="row">
-          <h2 id="h2PizzaToppingsID">Pizza Toppings ($1.50 each)</h2>
+          <p id="h2PizzaToppingsID">Pizza Toppings ($1.50 each)</p>
           <div class="form-group" id="pizzaToppingsClassID">
             <div id="toppingsID" class="col-md-4">
               <input type="checkbox" name="toppingsCheckBoxes" value=" Pepperoni">  Pepperoni<br>
@@ -59,7 +65,9 @@
               <input type="checkbox" name="toppingsCheckBoxes" value=" Mushroom">  Mushroom<br>
               <input type="checkbox" name="toppingsCheckBoxes" value=" Blood">  Blood<br>
             </div> <!-- column DIV ending -->
-            <p id="garlicID"><strong>Note: No Garlic allowed!</strong></p>
+            <p id="garlicID">
+              Note: No Garlic allowed!
+            </p>
           </div>
             <button id="orderSubmitBTNID" type="submit" class="btn btn-default">Submit Order</button>
         </div> <!-- row DIV ending -->

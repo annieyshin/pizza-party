@@ -19,7 +19,7 @@
   <div class="container">
     <form id=pizzaToppingsFormID>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h2>Pizza Size</h2>
             <select class="form-control" id="pizzaSizeFormID">
               <option value="SML">small</option>
@@ -28,7 +28,10 @@
               <option value="XL">X-Large</option>
             </select>
         </div> <!-- column DIV ending -->
-        <div class="col-md-6">
+        <div class="col-md-4">
+         <img id="batpicID" src="img/vampire1.png" alt="bats!">
+       </div>
+        <div class="col-md-4">
           <h2>Pizza Quantity</h2>
             <select class="form-control" id="pizzaQtyFormID">
               <option value="1">One</option>
@@ -39,73 +42,73 @@
         </div> <!-- column DIV ending -->
       </div> <!-- row DIV ending -->
       <div class="row">
-          <h2 id="h2PizzaToppingsID">Pizza Toppings</h2>
+          <h2 id="h2PizzaToppingsID">Pizza Toppings ($1.50 each)</h2>
           <div class="toppingsDIV">
-            <div class="col-md-4">
+            <div id="toppingsID" class="col-md-4">
               <div class="radio" id="pepperoniID">
                 <label for="pepperoni">
-                  <input type="radio" name="pepperoni" value="pepperoni" checked>
+                  <input type="radio" name="pepperoni" value="pepperoni">
                   Pepperoni
                 </label>
               </div>
               <div class="radio" id="hamID">
                 <label for="ham">
-                  <input type="radio" name="ham" value="ham" checked>
+                  <input type="radio" name="ham" value="ham">
                   Ham
                 </label>
               </div>
               <div class="radio" id="bloodSausageID">
                 <label for="bloodSausage">
-                  <input type="radio" name="bloodSausage" value="bloodSausage" checked>
+                  <input type="radio" name="bloodSausage" value="bloodSausage">
                   Blood Sausage
                 </label>
               </div>
             </div> <!-- column DIV ending -->
 
-            <div class="col-md-4">
+            <div id="toppingsID" class="col-md-4">
               <div class="radio" id="peppersID">
                 <label for="peppers">
-                  <input type="radio" name="peppers" value="peppers" checked>
+                  <input type="radio" name="peppers" value="peppers">
                   Green Peppers
                 </label>
               </div>
               <div class="radio" id="artichokeID">
                 <label for="artichoke">
-                  <input type="radio" name="artichoke" value="artichoke" checked>
+                  <input type="radio" name="artichoke" value="artichoke">
                   Artichoke
                 </label>
               </div>
               <div class="radio" id="onionID">
                 <label for="onion">
-                  <input type="radio" name="onion" value="onion" checked>
+                  <input type="radio" name="onion" value="onion">
                   Onion
                 </label>
               </div>
             </div> <!-- column DIV ending -->
 
-            <div class="col-md-4">
+            <div id="toppingsID" class="col-md-4">
               <div class="radio" id="olivesID">
                 <label for="olives">
-                  <input type="radio" name="olives" value="olives" checked>
+                  <input type="radio" name="olives" value="olives">
                   Olives
                 </label>
               </div> <!-- radio button DIV ending -->
               <div class="radio" id="mushroomID">
                 <label for="mushroom">
-                  <input type="radio" name="mushroom" value="mushroom" checked>
+                  <input type="radio" name="mushroom" value="mushroom">
                   Mushroom
                 </label>
               </div> <!-- radio button DIV ending -->
               <div class="radio" id="bloodID">
                 <label for="blood">
-                  <input type="radio" name="blood" value="blood" checked>
+                  <input type="radio" name="blood" value="blood">
                   Blood
                 </label>
               </div> <!-- radio button DIV ending -->
             </div> <!-- column DIV ending -->
             <p id="garlicID"><strong>Note: No Garlic allowed!</strong></p>
           </div>
-            <button id="orderSubmitID" class="btn btn-default">Submit Order</button>
+            <button id="orderSubmitBTNID" class="btn btn-default">Submit Order</button>
         </div> <!-- row DIV ending -->
     </form>
       <div id="outputDisplayID">

@@ -46,7 +46,8 @@ $(document).ready(function () {
 
         newPizza.sizePizzaPRO();
         newPizza.toppingsPRO();
-        $(".pizzaOrderListID").text("Cost: " + newPizza.cost + "  Toppings: " + newPizza.toppings);
+        $("#outputDisplayID").show();
+        $(".pizzaOrderListID").text("Cost: " + newPizza.cost + "                  Toppings: " + newPizza.toppings);
         console.log("brutal")
       });
     });

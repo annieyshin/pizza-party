@@ -19,11 +19,8 @@
   <div class="container">
     <form id=pizzaToppingsFormID>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-8">
           <h2>Pizza Size</h2>
-
-
-
             <div class="radio" id="pizzaSizeFormID">
               <input type="radio" name="sizeCheckBoxes" value="10">  Small<br>
               <input type="radio" name="sizeCheckBoxes" value="15">  Medium<br>
@@ -67,10 +64,14 @@
             <button id="orderSubmitBTNID" type="submit" class="btn btn-default">Submit Order</button>
         </div> <!-- row DIV ending -->
     </form>
+    <br>
+    <br>
       <div id="outputDisplayID">
         <br>
-        <h2>Pizza Order Summary</h2>
+        <h1>Pizza Order Summary</h1>
+        <h2 id="zaSum" >
          <span class="pizzaOrderListID"></span>
+        </h2>
       </div>
 
   </div> <!-- container DIV ending -->

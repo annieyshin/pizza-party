@@ -1,5 +1,4 @@
-var pizzaVAR = "";
-var orderTotalVAR = "";
+var newPizza;
 
 function pizza(toppings, size) {
   this.quantity = 0;
@@ -9,12 +8,9 @@ function pizza(toppings, size) {
   this.cost = 0;
 }
 
-pizza.prototype.toppingCheckBoxesPRO = function() {
-  $("input:checkbox[name=toppingCheckBoxes]:checked").each(function() {
-    var toppingsTotalChecked = $(this).val();
-    this.toppings.push(toppingsTotalChecked);
-    console.log("woot toppings");
-  });
+pizza.prototype.toppingsPRO = function() {
+  var allTheToppings = this.toppings.length;
+  this.cost += allTheToppings;
 }
 
 // pizza.prototype.costofPizzaSize = function() {
@@ -34,15 +30,16 @@ pizza.prototype.toppingCheckBoxesPRO = function() {
 $(document).ready(function () {
   $("#orderSubmitBTNID").click(function(event) {
     event.preventDefault();
-    newPizzaOrder = new pizza()
-    newPizzaOrder.toppingCheckBoxesPRO();
-    console.log("woof");
-    // $("#pizzaToppingsFormID input:radio:checked").each(function(){
-    //   var toppingsOrder = $(this).val();
-    //   newPizzaOrder.toppings.push(toppingsOrder);
-    // });
+    newPizza = new pizza();
 
-    $(".pizzaOrderListID").text("Cost: " );
-  console.log("brutal");
+    $("input:checkbox[name=toppingsCheckBoxes]:checked").each(function() {
+      var toppingsTotalChecked = $(this).val();
+      newPizza.toppings.push(toppingsTotalChecked);
+
+    $(".pizzaOrderListID").text("Toppings: " + newPizza.toppings + "  ");
+    console.log("brutal");
+
+    });
   });
 });
+// });

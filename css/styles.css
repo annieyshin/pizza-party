@@ -1,0 +1,51 @@
+.container {
+  background-color: #29203d;
+  width: 100%;
+  font-size: 18pt;
+}
+
+.jumbotron {
+  background-color: black;
+  text-align: center;
+}
+
+#outputDisplayID {
+  color: white;
+}
+
+#titleTextID {
+  font-size: 72pt;
+  color: #5b0a0a;
+}
+
+#bat1ID {
+  float: inherit;
+  height: 120px;
+}
+
+#garlicID {
+  color: yellow;
+}
+
+.col-md-4{
+  background-color: black;
+  color: white;
+  border: 3px solid maroon;
+}
+
+.col-md-6{
+  text-align: center;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-size: border size;
+}
+
+h2 {
+  color: #b4c160;
+}
+
+#h2PizzaToppingsID {
+  color: gray;
+}

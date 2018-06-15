@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js" type="text/javascript">
@@ -10,6 +10,113 @@
     <title>Pizza Party</title>
   </head>
   <body>
+  <div class="jumbotron">
+    <p><span id="titleTextID">Vampire Pizza Cult</span>
+      <img id="bat1ID" src="img/bat2.png" alt="bat">
+      order...or die
+    </p>
+  </div>     <!-- Jumbotron DIV ending -->
+  <div class="container">
+    <form id=pizzaToppingsFormID>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Pizza Size</h2>
+            <select class="form-control" id="pizzaSizeFormID">
+              <option value="SML">small</option>
+              <option value="MED">medium</option>
+              <option value="LRG">Large</option>
+              <option value="XL">X-Large</option>
+            </select>
+        </div> <!-- column DIV ending -->
+        <div class="col-md-6">
+          <h2>Pizza Quantity</h2>
+            <select class="form-control" id="pizzaQtyFormID">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+            </select>
+        </div> <!-- column DIV ending -->
+      </div> <!-- row DIV ending -->
+      <div class="row">
+          <h2 id="h2PizzaToppingsID">Pizza Toppings</h2>
+          <div class="toppingsDIV">
+            <div class="col-md-4">
+              <div class="radio" id="pepperoniID">
+                <label for="pepperoni">
+                  <input type="radio" name="pepperoni" value="pepperoni" checked>
+                  Pepperoni
+                </label>
+              </div>
+              <div class="radio" id="hamID">
+                <label for="ham">
+                  <input type="radio" name="ham" value="ham" checked>
+                  Ham
+                </label>
+              </div>
+              <div class="radio" id="bloodSausageID">
+                <label for="bloodSausage">
+                  <input type="radio" name="bloodSausage" value="bloodSausage" checked>
+                  Blood Sausage
+                </label>
+              </div>
+            </div> <!-- column DIV ending -->
+
+            <div class="col-md-4">
+              <div class="radio" id="peppersID">
+                <label for="peppers">
+                  <input type="radio" name="peppers" value="peppers" checked>
+                  Green Peppers
+                </label>
+              </div>
+              <div class="radio" id="artichokeID">
+                <label for="artichoke">
+                  <input type="radio" name="artichoke" value="artichoke" checked>
+                  Artichoke
+                </label>
+              </div>
+              <div class="radio" id="onionID">
+                <label for="onion">
+                  <input type="radio" name="onion" value="onion" checked>
+                  Onion
+                </label>
+              </div>
+            </div> <!-- column DIV ending -->
+
+            <div class="col-md-4">
+              <div class="radio" id="olivesID">
+                <label for="olives">
+                  <input type="radio" name="olives" value="olives" checked>
+                  Olives
+                </label>
+              </div> <!-- radio button DIV ending -->
+              <div class="radio" id="mushroomID">
+                <label for="mushroom">
+                  <input type="radio" name="mushroom" value="mushroom" checked>
+                  Mushroom
+                </label>
+              </div> <!-- radio button DIV ending -->
+              <div class="radio" id="bloodID">
+                <label for="blood">
+                  <input type="radio" name="blood" value="blood" checked>
+                  Blood
+                </label>
+              </div> <!-- radio button DIV ending -->
+            </div> <!-- column DIV ending -->
+            <p id="garlicID"><strong>Note: No Garlic allowed!</strong></p>
+          </div>
+            <button id="orderSubmitID" class="btn btn-default">Submit Order</button>
+        </div> <!-- row DIV ending -->
+    </form>
+      <div id="outputDisplayID">
+        <br>
+        <h2>Pizza Order Summary</h2>
+        <ul id="pizzaOrderListID">
+
+        </ul>
+      </div>
+
+  </div> <!-- container DIV ending -->
 
   </body>
 </html>

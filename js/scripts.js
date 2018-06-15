@@ -9,10 +9,10 @@ function pizza(toppings, size) {
   this.cost = 0;
 }
 
-// pizza.prototype.toppingsPRO = function() {
-//   var allTheToppings = this.toppings.length;
-//   this.cost += allTheToppings;
-// }
+pizza.prototype.toppingsPRO = function() {
+  var allTheToppings = this.toppings.length;
+  this.cost += (allTheToppings * 1.50);
+}
 
 pizza.prototype.sizePizzaPRO = function() {
   if(this.size === "10") {
@@ -45,6 +45,7 @@ $(document).ready(function () {
         });
 
         newPizza.sizePizzaPRO();
+        newPizza.toppingsPRO();
         $(".pizzaOrderListID").text("Cost: " + newPizza.cost + "  Toppings: " + newPizza.toppings);
         console.log("brutal")
       });

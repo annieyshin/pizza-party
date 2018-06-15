@@ -22,10 +22,10 @@
         <div class="col-md-4">
           <h2>Pizza Size</h2>
             <select class="form-control" id="pizzaSizeFormID">
-              <option value="SML">small</option>
-              <option value="MED">medium</option>
-              <option value="LRG">Large</option>
-              <option value="XL">X-Large</option>
+              <option value="10">small</option>
+              <option value="15">medium</option>
+              <option value="20">Large</option>
+              <option value="25">X-Large</option>
             </select>
         </div> <!-- column DIV ending -->
         <div class="col-md-4">
@@ -43,68 +43,21 @@
       </div> <!-- row DIV ending -->
       <div class="row">
           <h2 id="h2PizzaToppingsID">Pizza Toppings ($1.50 each)</h2>
-          <div class="toppingsDIV">
+          <div class="form-group" id="pizzaToppingsClassID">
             <div id="toppingsID" class="col-md-4">
-              <div class="radio" id="pepperoniID">
-                <label for="pepperoni">
-                  <input type="radio" name="pepperoni" value="pepperoni">
-                  Pepperoni
-                </label>
-              </div>
-              <div class="radio" id="hamID">
-                <label for="ham">
-                  <input type="radio" name="ham" value="ham">
-                  Ham
-                </label>
-              </div>
-              <div class="radio" id="bloodSausageID">
-                <label for="bloodSausage">
-                  <input type="radio" name="bloodSausage" value="bloodSausage">
-                  Blood Sausage
-                </label>
-              </div>
+              <input id="pepperoniID" type="checkbox" name="toppingsCheckBoxes" value="pepperoni"> Pepperoni<br>
+              <input id="hamID" type="checkbox" name="toppingsCheckBoxes" value="ham"> Ham<br>
+              <input id="bloodSausageID" type="checkbox" name="toppingsCheckBoxes" value="bloodSausage"> Blood Sausage<br>
             </div> <!-- column DIV ending -->
-
             <div id="toppingsID" class="col-md-4">
-              <div class="radio" id="peppersID">
-                <label for="peppers">
-                  <input type="radio" name="peppers" value="peppers">
-                  Green Peppers
-                </label>
-              </div>
-              <div class="radio" id="artichokeID">
-                <label for="artichoke">
-                  <input type="radio" name="artichoke" value="artichoke">
-                  Artichoke
-                </label>
-              </div>
-              <div class="radio" id="onionID">
-                <label for="onion">
-                  <input type="radio" name="onion" value="onion">
-                  Onion
-                </label>
-              </div>
+              <input id="peppersID" type="checkbox" name="toppingsCheckBoxes" value="peppers"> Green Peppers<br>
+              <input id="artichokeID" type="checkbox" name="toppingsCheckBoxes" value="artichoke"> Artichoke<br>
+              <input id="onionID" type="checkbox" name="toppingsCheckBoxes" value="onion"> Onion<br>
             </div> <!-- column DIV ending -->
-
             <div id="toppingsID" class="col-md-4">
-              <div class="radio" id="olivesID">
-                <label for="olives">
-                  <input type="radio" name="olives" value="olives">
-                  Olives
-                </label>
-              </div> <!-- radio button DIV ending -->
-              <div class="radio" id="mushroomID">
-                <label for="mushroom">
-                  <input type="radio" name="mushroom" value="mushroom">
-                  Mushroom
-                </label>
-              </div> <!-- radio button DIV ending -->
-              <div class="radio" id="bloodID">
-                <label for="blood">
-                  <input type="radio" name="blood" value="blood">
-                  Blood
-                </label>
-              </div> <!-- radio button DIV ending -->
+              <input id="olivesID" type="checkbox" name="toppingsCheckBoxes" value="olives"> Olives<br>
+              <input id="mushroomID" type="checkbox" name="toppingsCheckBoxes" value="mushroom"> Mushroom<br>
+              <input id="bloodID"type="checkbox" name="toppingsCheckBoxes" value="blood"> Blood<br>
             </div> <!-- column DIV ending -->
             <p id="garlicID"><strong>Note: No Garlic allowed!</strong></p>
           </div>

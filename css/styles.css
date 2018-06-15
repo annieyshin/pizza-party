@@ -41,7 +41,7 @@
 #toppingsID {
   background-color: #661c12;
   color: white;
-  border: 3px solid grey;
+  border: 3px solid maroon;
   padding: 14px;
 }
 
@@ -70,17 +70,15 @@ h2 {
 }
 
 #batpicID {
-  padding: 15px;
-  border: 4px solid grey;
-  float: left;
-  width: 50%;
+margin: 0;
+height: 350px;
 }
 
 #pizzaSizeFormID {
   background-color: black;
-  border: 4px solid grey;
+  /*border: 4px solid grey;*/
   padding: 25px;
-  margin: 4px;
+  margin: 9px;
 }
 
 #outputDisplayID {

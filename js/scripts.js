@@ -1,5 +1,5 @@
-var newPizza;
-var pizzaSizeChecked;
+
+var newPizza = [];
 
 function pizza(toppings, size) {
   this.quantity = 0;
@@ -28,27 +28,26 @@ pizza.prototype.sizePizzaPRO = function() {
 
 $(document).ready(function () {
   newPizza = new pizza();
-
-      $("input[name='sizeCheckBoxes']").click(function(){
-      $("input:radio[name=sizeCheckBoxes]:checked").each(function(){
-        pizzaSizeChecked = $(this).val();
-        newPizza.size = pizzaSizeChecked;
-        console.log(pizzaSizeChecked);
-      });
-
-      $("#orderSubmitBTNID").click(function(event) {
-        event.preventDefault();
-        $("input:checkbox[name=toppingsCheckBoxes]:checked").each(function() {
-          var toppingsTotalChecked = $(this).val();
-          newPizza.toppings.push(toppingsTotalChecked);
-          console.log("woof");
-        });
-
-        newPizza.sizePizzaPRO();
-        newPizza.toppingsPRO();
-        $("#outputDisplayID").show();
-        $(".pizzaOrderListID").text("Cost: " + newPizza.cost + "                  Toppings: " + newPizza.toppings);
-        console.log("brutal")
-      });
+  $("input[name='sizeCheckBoxes']").click(function(){
+    $("input:radio[name=sizeCheckBoxes]:checked").each(function(){
+      var pizzaSizeChecked = $(this).val();
+      newPizza.size = pizzaSizeChecked;
+      console.log(pizzaSizeChecked);
     });
+  });
+
+  $("#orderSubmitBTNID").click(function(event) {
+    event.preventDefault();
+    $("input:checkbox[name=toppingsCheckBoxes]:checked").each(function() {
+      var toppingsTotalChecked = $(this).val();
+      newPizza.toppings.push(toppingsTotalChecked);
+      console.log("woof");
+    });
+
+    newPizza.sizePizzaPRO();
+    newPizza.toppingsPRO();
+    $("#outputDisplayID").show();
+    $(".pizzaOrderListID").text("Cost: " + newPizza.cost + "                  Toppings: " + newPizza.toppings);
+    console.log("brutal")
+  });
 });

@@ -1,6 +1,6 @@
-  var newPizza = [];
+var newPizza = [];
 
-function pizza(toppings, size) {
+function Pizza(toppings, size) {
   this.quantity = 0;
   this.toppings = [];
   this.size = size;
@@ -8,12 +8,12 @@ function pizza(toppings, size) {
   this.cost = 0;
 }
 
-pizza.prototype.toppingsPRO = function() {
+Pizza.prototype.toppingsPRO = function() {
   var allTheToppings = this.toppings.length;
   this.cost += (allTheToppings * 1.50);
 }
 
-pizza.prototype.sizePizzaPRO = function() {
+Pizza.prototype.sizePizzaPRO = function() {
   if(this.size === "10") {
     this.cost += 10;
   } else if (this.size === "15") {
@@ -28,27 +28,20 @@ pizza.prototype.sizePizzaPRO = function() {
 $(document).ready(function () {
   $("#orderSubmitBTNID").click(function(event) {
     event.preventDefault();
-    newPizza = new pizza();
-
-    console.log("woot");
-
-    // $("input[name='sizeCheckBoxes']").click(function(){
-      $("input:radio[name=sizeCheckBoxes]:checked").each(function(){
-        var pizzaSizeChecked = $(this).val();
-        newPizza.size = pizzaSizeChecked;
-        console.log(pizzaSizeChecked);
-        $("input:checkbox[name=toppingsCheckBoxes]:checked").each(function() {
-        var toppingsTotalChecked = $(this).val();
-        newPizza.toppings.push(toppingsTotalChecked);
-        });
+    newPizza = new Pizza();
+    $("input:radio[name=sizeCheckBoxes]:checked").each(function(){
+      var pizzaSizeChecked = $(this).val();
+      newPizza.size = pizzaSizeChecked;
+      console.log(pizzaSizeChecked);
+      $("input:checkbox[name=toppingsCheckBoxes]:checked").each(function() {
+      var toppingsTotalChecked = $(this).val();
+      newPizza.toppings.push(toppingsTotalChecked);
       });
-
+    });
       newPizza.sizePizzaPRO();
       newPizza.toppingsPRO();
       $("#outputDisplayID").show();
-      $(".pizzaOrderListID").text("Cost: " + newPizza.cost + "                  Toppings: " + newPizza.toppings);
-      console.log("brutal")
-
+      $(".pizzaOrderListID").text("Cost: $" + newPizza.cost + "                  Toppings: " + newPizza.toppings);
   });
 });
 // });

@@ -2,6 +2,7 @@
   background-color: #300a05;
   width: 100%;
   font-size: 18pt;
+  background-image: url(../img/blood.jpg);
 }
 
 .jumbotron {
@@ -19,34 +20,38 @@
 
 #outputDisplayID {
   color: white;
+  background-color: #661c12;
+  height: 250px;
 }
 
 #titleTextID {
-  font-size: 72pt;
+  font-size: 62pt;
   color: #5b0a0a;
 }
 
 #bat1ID {
   float: inherit;
-  height: 120px;
+  height: 80px;
 }
 
+#bat2ID{
+  float: left;
+  height: 50px;
+  margin-left: 20px;
+}
 #garlicID {
   color: grey;
   font-style: italic;
   font-family: sans-serif;
   margin: 15px;
+  text-align: center;
 }
 
 #toppingsID {
-  background-color: #661c12;
-  color: white;
-  border: 3px solid maroon;
+  background-color: black;
+  color: grey;
+  border: 3px solid grey;
   padding: 14px;
-}
-
-.col-md-6{
-  text-align: center;
 }
 
 body {
@@ -69,21 +74,21 @@ h2 {
   /*text-align: center;*/
 }
 
-#batpicID {
-margin: 0;
-height: 350px;
+#pizzaID {
+/* margin: 0; */
+height: 190px;
 }
 
 #pizzaSizeFormID {
   background-color: black;
-  /*border: 4px solid grey;*/
-  padding: 25px;
+  border: 4px solid grey;
+  padding: 45px;
   margin: 9px;
 }
 
 #outputDisplayID {
   display: none;
   text-align: center;
-  border: 2px solid pink;
+  border: 5px solid pink;
   padding: 20px;
 }
